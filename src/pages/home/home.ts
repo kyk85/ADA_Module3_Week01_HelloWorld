@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { SecondPage } from '../second/second';
+import { TablePage } from '../table/table';
 
 @Component({
   selector: 'page-home',
@@ -60,6 +62,14 @@ export class HomePage {
       ]
     });
     confirm.present();
+  }
+
+  gotosecond(){
+    this.navCtrl.push(SecondPage, {number:this.number});
+  }
+
+  gototable(){
+    this.navCtrl.push(TablePage, {number:this.number});
   }
 }
 
