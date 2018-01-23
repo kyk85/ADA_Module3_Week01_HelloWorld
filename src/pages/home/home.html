@@ -1,14 +1,29 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      ADA WEB Module 3, Week 1 - Ionic Exercise
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h3>
+    {{number}}
+  </h3>
+  <button ion-button color="primary" (click)="increment()">Increment</button>
+  <button ion-button color="primary" (click)="decrement()">Decrement</button>
+  <br>
+  <button ion-button color="danger" (click)="reset()">Reset</button>
+  <br>
+  <br>
+  {{message}}
+  <hr>
+  <br>
+  <ion-card class="card-background-page">
+    <img src="" alt="">
+    <ion-card-content>
+      <div class="card-title">The Justice League</div>
+      <div class="card-subtitle">World's Finest</div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
